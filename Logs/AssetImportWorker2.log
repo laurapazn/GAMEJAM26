@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.4/staging' branch; Version is '6000.4.1f1 (336a400b9ea2) revision 3369536'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-LENOVO" at "2026-04-20T00:57:38.2154995Z"
 OS: 'Windows 11  (10.0.22621) Core' Language: 'es' Physical Memory: 32475 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-LENOVO" at "2026-04-19T05:31:55.2418931Z"
-Date: 2026-04-19T05:31:55Z
+Date: 2026-04-20T00:57:38Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.4.1f1\Editor\Unity.exe
@@ -19,7 +19,9 @@ C:/Users/LENOVO/Desktop/rv/GAMEJAM26
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-53742
+63423
+-licensingIpc
+LicenseClient-LENOVO
 -force-d3d12
 -job-worker-count
 15
@@ -66,14 +68,14 @@ C:/Users/LENOVO/Desktop/rv/GAMEJAM26
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [9308]  Target information:
+Player connection [14816]  Target information:
 
-Player connection [9308]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 55713294 [EditorId] 55713294 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-S01B4GFP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [14816]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3032971183 [EditorId] 3032971183 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-S01B4GFP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [9308]  * "[IP] 172.20.10.2 [Port] 0 [Flags] 2 [Guid] 55713294 [EditorId] 55713294 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-S01B4GFP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [14816]  * "[IP] 192.168.100.109 [Port] 0 [Flags] 2 [Guid] 3032971183 [EditorId] 3032971183 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-S01B4GFP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [9308] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [9308] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [14816] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [14816] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 15
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -85,12 +87,27 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 10.21 ms, found 4 plugins.
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-LENOVO"
+[Licensing::IpcConnector] LicenseClient-LENOVO channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-LENOVO-6000.4.1" at "2026-04-20T00:57:39.100737Z"
+Refreshing native plugins compatible for Editor in 180.77 ms, found 4 plugins.
 Initialize engine version: 6000.4.1f1 (336a400b9ea2)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/LENOVO/Desktop/rv/GAMEJAM26/Assets
 Forcing GfxDevice: Direct3D 12
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              c682c2e843a346c2a24b9e0fc33c7a93
+  Correlation Id:          c51abc2d216d617b83786a52a53546a7
+  External correlation Id: 1097767173948633588
+  Machine Id:              gcpAhfLYkCuve04nzBs+Vfh5n2I=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-LENOVO-6000.4.1" (connect: 0.00s, validation: 0.00s, handshake: 0.99s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-LENOVO-6000.4.1-notifications" at "2026-04-20T00:57:40.0962152Z"
+[Licensing::Module] Licensing Background thread has ended after 1.88s
 d3d12: failed to query info queue interface (0x80004002).
 Direct3D:
     Version:         Direct3D 12 [level 12.2]
@@ -103,19 +120,13 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56680
-[Licensing::Client] Error: HandshakeResponse reported an error:
-	ResponseCode: 505
-	ResponseStatus: Unsupported protocol version '1.18.1'.
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-LENOVO"
-[Licensing::IpcConnector] LicenseClient-LENOVO channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-LENOVO-6000.4.1" at "2026-04-19T05:31:56.9203454Z"
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56728
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003636 seconds.
+Registered in 0.001459 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -124,32 +135,23 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.478 seconds
-Domain Reload Profiling: 1052ms
-	BeginReloadAssembly (161ms)
-	RebuildCommonClasses (40ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (86ms)
-	LoadAllAssembliesAndSetupDomain (273ms)
-		LoadAssemblies (156ms)
-		AnalyzeDomain (262ms)
-			TypeCache.Refresh (261ms)
-				TypeCache.ScanAssembly (247ms)
-	FinalizeReload (480ms)
+- Finished resetting the current domain, in  0.350 seconds
+Domain Reload Profiling: 4002ms
+	BeginReloadAssembly (123ms)
+	RebuildCommonClasses (488ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (68ms)
+	LoadAllAssembliesAndSetupDomain (2959ms)
+		LoadAssemblies (120ms)
+		AnalyzeDomain (2951ms)
+			TypeCache.Refresh (2951ms)
+				TypeCache.ScanAssembly (2154ms)
+	FinalizeReload (353ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (46ms)
-			BeforeProcessingInitializeOnLoad (97ms)
-			ProcessInitializeOnLoadAttributes (139ms)
-			ProcessInitializeOnLoadMethodAttributes (107ms)
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.1+9fbee8e
-  Session Id:              ca685379d80a4a00896cf50745740d0c
-  Correlation Id:          9093fa2d1b0ada59203cee1f95309951
-  External correlation Id: 7664685548352817812
-  Machine Id:              gcpAhfLYkCuve04nzBs+Vfh5n2I=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-LENOVO-6000.4.1" (connect: 0.00s, validation: 0.00s, handshake: 1.18s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-LENOVO-6000.4.1-notifications" at "2026-04-19T05:31:58.1067968Z"
-[Licensing::Module] Licensing Background thread has ended after 2.87s
+			InitializePlatformSupportModulesInManaged (36ms)
+			BeforeProcessingInitializeOnLoad (75ms)
+			ProcessInitializeOnLoadAttributes (88ms)
+			ProcessInitializeOnLoadMethodAttributes (87ms)
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
@@ -194,40 +196,38 @@ Native extension for WebGL target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
+Refreshing native plugins compatible for Editor in 2.40 ms, found 4 plugins.
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.742 seconds
-Domain Reload Profiling: 1661ms
-	BeginReloadAssembly (173ms)
-		DisableScriptedObjects (6ms)
-		CreateAndSetChildDomain (29ms)
-	RebuildCommonClasses (43ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (70ms)
-	LoadAllAssembliesAndSetupDomain (619ms)
-		LoadAssemblies (400ms)
-		AnalyzeDomain (301ms)
-			TypeCache.Refresh (217ms)
-				TypeCache.ScanAssembly (198ms)
-			BuildScriptInfoCaches (67ms)
-			ResolveRequiredComponents (16ms)
-	FinalizeReload (742ms)
+- Finished resetting the current domain, in  0.904 seconds
+Domain Reload Profiling: 1739ms
+	BeginReloadAssembly (161ms)
+		DisableScriptedObjects (4ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (60ms)
+	LoadAllAssembliesAndSetupDomain (572ms)
+		LoadAssemblies (368ms)
+		AnalyzeDomain (290ms)
+			TypeCache.Refresh (204ms)
+				TypeCache.ScanAssembly (189ms)
+			BuildScriptInfoCaches (71ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (904ms)
 		SetupLoadedEditorAssemblies (0ms)
-			BeforeProcessingInitializeOnLoad (145ms)
-			ProcessInitializeOnLoadAttributes (301ms)
-			ProcessInitializeOnLoadMethodAttributes (59ms)
-			AfterProcessingInitializeOnLoad (6ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+			BeforeProcessingInitializeOnLoad (164ms)
+			ProcessInitializeOnLoadAttributes (361ms)
+			ProcessInitializeOnLoadMethodAttributes (82ms)
+			AfterProcessingInitializeOnLoad (10ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 2.37 ms, found 4 plugins.
 Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6578 unused Assets / (5.4 MB). Loaded Objects now: 7400.
-Memory consumption went from 158.2 MB to 152.8 MB.
-Total: 5.691200 ms (FindLiveObjects: 0.424700 ms CreateObjectMapping: 0.246200 ms MarkObjects: 3.598000 ms  DeleteObjects: 1.420500 ms)
+Unloading 6579 unused Assets / (4.8 MB). Loaded Objects now: 7401.
+Memory consumption went from 161.9 MB to 157.1 MB.
+Total: 7.866100 ms (FindLiveObjects: 0.485800 ms CreateObjectMapping: 0.686500 ms MarkObjects: 4.834500 ms  DeleteObjects: 1.857000 ms)
 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
