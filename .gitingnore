@@ -5,7 +5,7 @@
 [Bb]uilds/
 [Ll]ogs/
 UserSettings/
-
+.vs/
 *.csproj
 *.unityproj
 *.sln
@@ -14,7 +14,7 @@ UserSettings/
 *.pidb
 *.booproj
 *.svd
-
+.suo
 *.pdb
 *.mdb
 
