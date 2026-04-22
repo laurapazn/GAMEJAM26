@@ -6,26 +6,34 @@ public class Palabra : MonoBehaviour
     public TMP_Text texto;
 
     private bool esCorrecta;
+    private bool esTrampa;
     private bool tocada = false;
 
-    public float velocidad = 5f; 
+    public float velocidad = 4f;
 
-    public void Configurar(string palabraTexto, bool correcta)
+    public void Configurar(string palabraTexto, bool correcta, bool trampa)
     {
         esCorrecta = correcta;
+        esTrampa = trampa;
 
         if (texto != null)
+        {
             texto.text = palabraTexto;
+
+            if (esTrampa)
+                texto.color = Color.red;
+            else if (esCorrecta)
+                texto.color = Color.green;
+            else
+                texto.color = Color.white;
+        }
     }
 
     void Start()
     {
-        
         BoxCollider col = GetComponent<BoxCollider>();
         if (col != null)
-        {
-            col.size = new Vector3(3f, 1.5f, 1f);
-        }
+            col.size = new Vector3(4f, 2f, 1f);
     }
 
     void Update()
@@ -34,7 +42,7 @@ public class Palabra : MonoBehaviour
 
         transform.Translate(Vector3.down * velocidad * Time.deltaTime);
 
-        if (transform.position.y < -6f)
+        if (transform.position.y < -7f)
         {
             if (esCorrecta && ControlJuego.Instance != null)
                 ControlJuego.Instance.PalabraPerdida();
@@ -43,21 +51,20 @@ public class Palabra : MonoBehaviour
         }
     }
 
-    void OnMouseDown()
+    public void Tocar()
     {
         if (tocada) return;
 
         tocada = true;
 
-        Collider col = GetComponent<Collider>();
-        if (col != null) col.enabled = false;
-
         if (ControlJuego.Instance != null)
         {
             if (esCorrecta)
                 ControlJuego.Instance.PalabraAcertada();
+            else if (esTrampa)
+                ControlJuego.Instance.PalabraErrada(2);
             else
-                ControlJuego.Instance.PalabraErrada();
+                ControlJuego.Instance.PalabraErrada(1);
         }
 
         Destroy(gameObject);

@@ -849,7 +849,8 @@ MonoBehaviour:
   spawnY: 5
   palabrasPorSpawn: 6
   intervalo: 2
-  puntosPorAcierto: 10
+  vidasIniciales: 3
+  puntajeObjetivo: 100
   textoPuntaje: {fileID: 761186234}
   textoVidas: {fileID: 226675487}
   textoCategoria: {fileID: 2075446948}
@@ -1843,9 +1844,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palabra
       objectReference: {fileID: 0}
+    - target: {fileID: 802726577587359697, guid: 77d429673ee9fd44d9fdcd8f5d0f3165, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1866105311140352546, guid: 77d429673ee9fd44d9fdcd8f5d0f3165, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2123840421618090993, guid: 77d429673ee9fd44d9fdcd8f5d0f3165, type: 3}
       propertyPath: m_Size.x
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2123840421618090993, guid: 77d429673ee9fd44d9fdcd8f5d0f3165, type: 3}
+      propertyPath: m_LayerOverridePriority
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4982767860502469272, guid: 77d429673ee9fd44d9fdcd8f5d0f3165, type: 3}
       propertyPath: m_LocalPosition.x
