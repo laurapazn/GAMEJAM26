@@ -7,27 +7,36 @@ public class ControlJuego : MonoBehaviour
 {
     public static ControlJuego Instance;
 
-    [Header("Lista de palabras buenas y malas")]
-    public List<string> palabrasCorrectas = new List<string> { "PERRO", "GATO", "RATON", "ELEFANTE" };
-    public List<string> palabrasIncorrectas = new List<string> { "MESA", "ROJO", "COCHE", "AVION" };
+    [System.Serializable]
+    public class Categoria
+    {
+        public string nombre;
+        public List<string> palabras;
+    }
 
-    [Header("Spawner")]
+    public List<Categoria> categorias;
     public GameObject prefabPalabra;
-    public float rangoX = 5f;
-    public float spawnY = 5f;
-    public float intervalo = 2f;
 
-    [Header("UI")]
+    public float rangoX = 6f;
+    public float spawnY = 6f;
+    public int palabrasPorSpawn = 20;
+    public float intervalo = 0.25f;
+
+    public int vidasIniciales = 5;
+    public int puntajeObjetivo = 100;
+
     public TMP_Text textoPuntaje;
     public TMP_Text textoVidas;
     public TMP_Text textoCategoria;
+
     public GameObject panelGameOver;
     public TMP_Text textoMensaje;
 
     private int puntaje = 0;
-    private int vidas = 3;
-    private float velocidadActual = 2f;
-    private float intervaloActual;
+    private int vidas;
+    private bool juegoTerminado = false;
+
+    private Categoria categoriaActual;
 
     void Awake()
     {
@@ -36,55 +45,150 @@ public class ControlJuego : MonoBehaviour
 
     void Start()
     {
-        intervaloActual = intervalo;
+        vidas = vidasIniciales;
+
+        if (panelGameOver != null)
+            panelGameOver.SetActive(false);
+
+        ElegirCategoria();
+        InvokeRepeating(nameof(GenerarPalabras), 0.2f, intervalo);
         ActualizarUI();
-        if (panelGameOver) panelGameOver.SetActive(false);
-        if (textoCategoria) textoCategoria.text = "Toca: " + palabrasCorrectas[0];
-        InvokeRepeating("GenerarPalabra", 0f, intervaloActual);
     }
 
-    void GenerarPalabra()
+    void Update()
     {
-        if (vidas <= 0) return;
-        bool esCorrecta = Random.value > 0.5f;
-        string palabra;
-        if (esCorrecta)
-            palabra = palabrasCorrectas[Random.Range(0, palabrasCorrectas.Count)];
-        else
-            palabra = palabrasIncorrectas[Random.Range(0, palabrasIncorrectas.Count)];
-        Vector3 pos = new Vector3(Random.Range(-rangoX, rangoX), spawnY, 0);
-        GameObject obj = Instantiate(prefabPalabra, pos, Quaternion.identity);
-        Palabra p = obj.GetComponent<Palabra>();
-        p.Configurar(palabra, esCorrecta);
-        p.velocidad = velocidadActual;
+        DetectarClick();
+    }
+
+    void DetectarClick()
+    {
+        if (juegoTerminado) return;
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            int layerMask = LayerMask.GetMask("Palabra");
+
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit, 100f, layerMask))
+            {
+                Palabra p = hit.collider.GetComponentInParent<Palabra>();
+
+                if (p != null)
+                    p.Tocar();
+            }
+        }
+    }
+
+    void ElegirCategoria()
+    {
+        categoriaActual = categorias[Random.Range(0, categorias.Count)];
+
+        if (textoCategoria != null)
+            textoCategoria.text = "Categoria: " + categoriaActual.nombre;
+    }
+
+    void GenerarPalabras()
+    {
+        if (vidas <= 0 || juegoTerminado) return;
+
+        for (int i = 0; i < palabrasPorSpawn; i++)
+        {
+            float r = Random.value;
+
+            bool esCorrecta = false;
+            bool esTrampa = false;
+
+            if (r > 0.65f)
+                esCorrecta = true;
+            else if (r < 0.2f)
+                esTrampa = true;
+
+            string palabra;
+
+            if (esCorrecta)
+            {
+                palabra = categoriaActual.palabras[
+                    Random.Range(0, categoriaActual.palabras.Count)
+                ];
+            }
+            else
+            {
+                Categoria otra;
+                do
+                {
+                    otra = categorias[Random.Range(0, categorias.Count)];
+                } while (otra == categoriaActual);
+
+                palabra = otra.palabras[
+                    Random.Range(0, otra.palabras.Count)
+                ];
+            }
+
+            float posX = Random.Range(-rangoX, rangoX);
+
+            Vector3 posicion = new Vector3(
+                posX,
+                spawnY + Random.Range(0f, 3f),
+                0
+            );
+
+            GameObject obj = Instantiate(prefabPalabra, posicion, Quaternion.identity);
+
+            if (obj == null) continue;
+
+            Palabra p = obj.GetComponent<Palabra>();
+            if (p != null)
+            {
+                p.Configurar(palabra, esCorrecta, esTrampa);
+            }
+        }
     }
 
     public void PalabraAcertada()
     {
-        if (vidas <= 0) return;
+        if (juegoTerminado) return;
+
         puntaje += 10;
-        velocidadActual += 0.2f;
-        intervaloActual = Mathf.Max(0.6f, intervaloActual - 0.1f);
-        CancelInvoke("GenerarPalabra");
-        InvokeRepeating("GenerarPalabra", intervaloActual, intervaloActual);
+
+        if (puntaje >= puntajeObjetivo)
+        {
+            TerminarJuego("GANASTE");
+            return;
+        }
+
         ActualizarUI();
-        if (puntaje >= 20) TerminarJuego(true);
     }
 
-    public void PalabraErrada()
+    public void PalabraErrada(int daño = 1)
     {
-        if (vidas <= 0) return;
-        vidas--;
+        if (juegoTerminado) return;
+
+        vidas = Mathf.Max(0, vidas - daño);
+
+        if (vidas == 0)
+        {
+            TerminarJuego("GAME OVER");
+            return;
+        }
+
         ActualizarUI();
-        if (vidas <= 0) TerminarJuego(false);
     }
 
     public void PalabraPerdida()
     {
-        if (vidas <= 0) return;
-        vidas--;
+        if (juegoTerminado) return;
+
+        vidas = Mathf.Max(0, vidas - 1);
+
+        if (vidas == 0)
+        {
+            TerminarJuego("GAME OVER");
+            return;
+        }
+
         ActualizarUI();
-        if (vidas <= 0) TerminarJuego(false);
     }
 
     void ActualizarUI()
@@ -93,23 +197,21 @@ public class ControlJuego : MonoBehaviour
         if (textoVidas) textoVidas.text = "Lives: " + vidas;
     }
 
-    void TerminarJuego(bool victoria)
+    void TerminarJuego(string mensaje)
     {
-        CancelInvoke("GenerarPalabra");
-        if (panelGameOver)
-        {
+        juegoTerminado = true;
+
+        CancelInvoke();
+
+        if (panelGameOver != null)
             panelGameOver.SetActive(true);
-            if (textoMensaje) textoMensaje.text = victoria ? "¡GANASTE!" : "GAME OVER";
-        }
+
+        if (textoMensaje != null)
+            textoMensaje.text = mensaje;
     }
 
     public void Reiniciar()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-
-    public void Menu()
-    {
-        SceneManager.LoadScene("GamePanel");
     }
 }

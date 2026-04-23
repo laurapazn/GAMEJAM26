@@ -800,6 +800,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1047530070}
   - component: {fileID: 1047530069}
+  - component: {fileID: 1047530071}
   m_Layer: 0
   m_Name: WordGameManager
   m_TagString: Untagged
@@ -816,46 +817,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1047530068}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f9dbdb0f1f768945b7bd74db2d0f426, type: 3}
+  m_Script: {fileID: 11500000, guid: b1702d8c006d62046ae94207b58e9360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WordGameManager
-  categorias:
-  - nombre: animales
-    palabras:
-    - perro
-    - gato
-    - "p\xE1jaro"
-    - pato
-    - gallina
-    - hormiga
-  - nombre: colores
-    palabras:
-    - rojo
-    - azul
-    - amarillo
-    - rosa
-    - celeste
-    - blanco
-  - nombre: "n\xFAmeros"
-    palabras:
-    - dos
-    - doce
-    - uno
-    - once
-    - diez
-    - cuatro
-  prefabPalabra: {fileID: 1993867863}
-  rangoX: 5
-  spawnY: 5
-  palabrasPorSpawn: 6
-  intervalo: 2
-  vidasIniciales: 3
-  puntajeObjetivo: 100
-  textoPuntaje: {fileID: 761186234}
-  textoVidas: {fileID: 226675487}
-  textoCategoria: {fileID: 2075446948}
-  panelGameOver: {fileID: 2016155070}
-  textoMensaje: {fileID: 1430377788}
 --- !u!4 &1047530070
 Transform:
   m_ObjectHideFlags: 0
@@ -871,6 +835,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1047530071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047530068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f9dbdb0f1f768945b7bd74db2d0f426, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ControlJuego
+  categorias: []
+  prefabPalabra: {fileID: 1993867863}
+  rangoX: 5
+  spawnY: 5
+  intervalo: 2
+  textoPuntaje: {fileID: 761186234}
+  textoVidas: {fileID: 226675487}
+  textoCategoria: {fileID: 2075446948}
+  panelGameOver: {fileID: 2016155070}
+  textoMensaje: {fileID: 1430377788}
 --- !u!1 &1052194947
 GameObject:
   m_ObjectHideFlags: 0
@@ -1843,22 +1829,6 @@ PrefabInstance:
     - target: {fileID: 802726577587359697, guid: 77d429673ee9fd44d9fdcd8f5d0f3165, type: 3}
       propertyPath: m_Name
       value: Palabra
-      objectReference: {fileID: 0}
-    - target: {fileID: 802726577587359697, guid: 77d429673ee9fd44d9fdcd8f5d0f3165, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1866105311140352546, guid: 77d429673ee9fd44d9fdcd8f5d0f3165, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2123840421618090993, guid: 77d429673ee9fd44d9fdcd8f5d0f3165, type: 3}
-      propertyPath: m_Size.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2123840421618090993, guid: 77d429673ee9fd44d9fdcd8f5d0f3165, type: 3}
-      propertyPath: m_LayerOverridePriority
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4982767860502469272, guid: 77d429673ee9fd44d9fdcd8f5d0f3165, type: 3}
       propertyPath: m_LocalPosition.x

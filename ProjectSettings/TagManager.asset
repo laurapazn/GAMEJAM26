@@ -7,14 +7,15 @@ TagManager:
   - Cube
   - Good
   - item
+  - Obstacle
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Palabra
   - Water
   - UI
-  - 
+  - Ground
   - 
   - 
   - 
