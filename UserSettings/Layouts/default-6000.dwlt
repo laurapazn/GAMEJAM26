@@ -8,10 +8,10 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: UnityEditor.dll::UnityEditor.ContainerWindow
   m_PixelRect:
     serializedVersion: 2
     x: 0
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 101
+  controlID: 51
   draggingID: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -594,7 +594,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/MiniGames/WordGame/Scripts
+    - Assets/MiniGames/EndlessRunner/Scripts
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -604,23 +604,24 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 69
   m_LastFolders:
-  - Assets/MiniGames/WordGame/Scripts
+  - Assets/MiniGames/EndlessRunner/Scripts
   m_LastFoldersGridSize: 69
   m_LastProjectPath: C:\Users\LENOVO\Desktop\rv\GAMEJAM26
   m_LockTracker:
     m_IsLocked: 0
   m_LastLocalAssetsSearchArea: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
+    scrollPos: {x: 0, y: 102.66669}
     m_SelectedIDs:
-    - m_Data: 49436
+    - m_Data: 49372
     m_LastClickedID:
-      m_Data: 49436
+      m_Data: 49372
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 49228
-    - m_Data: 49230
-    - m_Data: 49232
+    - m_Data: 49946
+    - m_Data: 49948
+    - m_Data: 49954
+    - m_Data: 1000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -654,9 +655,10 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 49228
-    - m_Data: 49230
-    - m_Data: 49232
+    - m_Data: 49946
+    - m_Data: 49948
+    - m_Data: 49954
+    - m_Data: 1000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -685,10 +687,10 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
     m_SelectedInstanceIDs:
-    - m_Data: 53664
+    - m_Data: 49570
     m_LastClickedEntityId:
-      m_Data: 53664
-    m_HadKeyboardFocusLastEvent: 0
+      m_Data: 49570
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: []
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -817,23 +819,8 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -27684
-      - m_Data: -27350
-      - m_Data: -23776
-      - m_Data: -23742
-      - m_Data: -22408
-      - m_Data: -21304
-      - m_Data: -13408
-      - m_Data: -12130
-      - m_Data: -7922
-      - m_Data: -4144
-      - m_Data: -3898
-      - m_Data: -3604
-      - m_Data: -1356
-      - m_Data: 50718
-      - m_Data: 50832
-      - m_Data: 53694
-      - m_Data: 53752
+      - m_Data: -6740
+      - m_Data: -1362
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1340,9 +1327,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.016998535, y: 0.008998616, z: -0.00015304732, w: -0.9998202}
   m_Size:
-    m_Target: 332.10468
+    m_Target: 255.49902
     speed: 2
-    m_Value: 332.10468
+    m_Value: 255.49902
   m_Ortho:
     m_Target: 0
     speed: 2

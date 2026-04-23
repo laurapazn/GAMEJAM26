@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-LENOVO" at "2026-04-20T17:33:45.133912Z"
 Built from '6000.4/staging' branch; Version is '6000.4.1f1 (336a400b9ea2) revision 3369536'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-LENOVO" at "2026-04-23T01:39:57.9234847Z"
 OS: 'Windows 11  (10.0.22621) Core' Language: 'es' Physical Memory: 32475 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-04-20T17:33:45Z
+Date: 2026-04-23T01:39:57Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.4.1f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ C:/Users/LENOVO/Desktop/rv/GAMEJAM26
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62751
+54263
 -licensingIpc
 LicenseClient-LENOVO
 -force-d3d12
@@ -68,14 +68,14 @@ C:/Users/LENOVO/Desktop/rv/GAMEJAM26
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [9132]  Target information:
+Player connection [23936]  Target information:
 
-Player connection [9132]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 885713275 [EditorId] 885713275 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-S01B4GFP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [23936]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1849689475 [EditorId] 1849689475 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-S01B4GFP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [9132]  * "[IP] 10.254.24.84 [Port] 0 [Flags] 2 [Guid] 885713275 [EditorId] 885713275 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-S01B4GFP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [23936]  * "[IP] 10.254.24.219 [Port] 0 [Flags] 2 [Guid] 1849689475 [EditorId] 1849689475 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-S01B4GFP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [9132] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [9132] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [23936] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [23936] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 15
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -87,7 +87,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 2.81 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.58 ms, found 4 plugins.
 Initialize engine version: 6000.4.1f1 (336a400b9ea2)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/LENOVO/Desktop/rv/GAMEJAM26/Assets
@@ -98,7 +98,7 @@ GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 	ResponseStatus: Unsupported protocol version '1.18.1'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-LENOVO"
 [Licensing::IpcConnector] LicenseClient-LENOVO channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-LENOVO-6000.4.1" at "2026-04-20T17:33:46.08249Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-LENOVO-6000.4.1" at "2026-04-23T01:39:58.6178372Z"
 d3d12: failed to query info queue interface (0x80004002).
 Direct3D:
     Version:         Direct3D 12 [level 12.2]
@@ -107,26 +107,26 @@ Direct3D:
     VRAM:            7956 MB
     App VRAM Budget: 7188 MB
     Driver:          32.0.15.9597
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.1+9fbee8e
-  Session Id:              393cec6b4b154c8d955fd90d030e916a
-  Correlation Id:          4d4749bbef1a10bb417b842e8311c4a3
-  External correlation Id: 5670198813006393782
-  Machine Id:              gcpAhfLYkCuve04nzBs+Vfh5n2I=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-LENOVO-6000.4.1" (connect: 0.00s, validation: 0.00s, handshake: 1.09s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-LENOVO-6000.4.1-notifications" at "2026-04-20T17:33:47.1778325Z"
-[Licensing::Module] Licensing Background thread has ended after 2.04s
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56948
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56372
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002216 seconds.
+Registered in 0.001604 seconds.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              1fee558d864a42b580cb3950b20c347d
+  Correlation Id:          916ebe712cef82abf6e8d4c1d2ca7888
+  External correlation Id: 7150469195156821100
+  Machine Id:              gcpAhfLYkCuve04nzBs+Vfh5n2I=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-LENOVO-6000.4.1" (connect: 0.00s, validation: 0.00s, handshake: 0.68s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-LENOVO-6000.4.1-notifications" at "2026-04-23T01:39:59.299143Z"
+[Licensing::Module] Licensing Background thread has ended after 1.38s
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -135,23 +135,23 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.385 seconds
-Domain Reload Profiling: 844ms
-	BeginReloadAssembly (132ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (65ms)
-	LoadAllAssembliesAndSetupDomain (213ms)
-		LoadAssemblies (128ms)
-		AnalyzeDomain (202ms)
-			TypeCache.Refresh (201ms)
-				TypeCache.ScanAssembly (184ms)
-	FinalizeReload (387ms)
+- Finished resetting the current domain, in  0.295 seconds
+Domain Reload Profiling: 630ms
+	BeginReloadAssembly (96ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (153ms)
+		LoadAssemblies (93ms)
+		AnalyzeDomain (143ms)
+			TypeCache.Refresh (143ms)
+				TypeCache.ScanAssembly (133ms)
+	FinalizeReload (296ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (46ms)
-			BeforeProcessingInitializeOnLoad (81ms)
-			ProcessInitializeOnLoadAttributes (98ms)
-			ProcessInitializeOnLoadMethodAttributes (80ms)
+			InitializePlatformSupportModulesInManaged (34ms)
+			BeforeProcessingInitializeOnLoad (64ms)
+			ProcessInitializeOnLoadAttributes (78ms)
+			ProcessInitializeOnLoadMethodAttributes (62ms)
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
@@ -201,35 +201,520 @@ Native extension for WebGL target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.771 seconds
-Domain Reload Profiling: 1628ms
-	BeginReloadAssembly (175ms)
-		DisableScriptedObjects (5ms)
-		CreateAndSetChildDomain (31ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (75ms)
-	LoadAllAssembliesAndSetupDomain (560ms)
-		LoadAssemblies (383ms)
-		AnalyzeDomain (268ms)
-			TypeCache.Refresh (196ms)
-				TypeCache.ScanAssembly (177ms)
-			BuildScriptInfoCaches (60ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (771ms)
+- Finished resetting the current domain, in  0.597 seconds
+Domain Reload Profiling: 1227ms
+	BeginReloadAssembly (131ms)
+		DisableScriptedObjects (4ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (405ms)
+		LoadAssemblies (273ms)
+		AnalyzeDomain (201ms)
+			TypeCache.Refresh (141ms)
+				TypeCache.ScanAssembly (129ms)
+			BuildScriptInfoCaches (50ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (597ms)
 		SetupLoadedEditorAssemblies (0ms)
-			BeforeProcessingInitializeOnLoad (128ms)
-			ProcessInitializeOnLoadAttributes (261ms)
-			ProcessInitializeOnLoadMethodAttributes (92ms)
-			AfterProcessingInitializeOnLoad (22ms)
-		AwakeInstancesAfterBackupRestoration (21ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 2.06 ms, found 4 plugins.
+			BeforeProcessingInitializeOnLoad (112ms)
+			ProcessInitializeOnLoadAttributes (240ms)
+			ProcessInitializeOnLoadMethodAttributes (51ms)
+			AfterProcessingInitializeOnLoad (4ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
 Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6580 unused Assets / (3.0 MB). Loaded Objects now: 7402.
-Memory consumption went from 166.1 MB to 163.0 MB.
-Total: 14.854400 ms (FindLiveObjects: 1.092300 ms CreateObjectMapping: 0.401000 ms MarkObjects: 11.177300 ms  DeleteObjects: 2.180500 ms)
+Unloading 6580 unused Assets / (5.7 MB). Loaded Objects now: 7402.
+Memory consumption went from 157.9 MB to 152.2 MB.
+Total: 5.805000 ms (FindLiveObjects: 0.388300 ms CreateObjectMapping: 0.239300 ms MarkObjects: 3.492300 ms  DeleteObjects: 1.682000 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 521419.357703 seconds.
+  path: Assets/_Recovery/0 (8).unity
+  importAddress: Guid(1394e6afe4aabb64fa6ad656b6d7c943) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Recovery/0 (8).unity using Guid(1394e6afe4aabb64fa6ad656b6d7c943) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd6fd4020c1e949ee40c882e3c0afcd06') in 0.0712324 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c89434ed306eabd3e4c77d92fada8c7c DependenciesID=079e323acd0a0a5ffba8cd18951d993b StaticDependenciesID=6ed412823ae7ef2358faca397a986af0 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 560.635777 seconds.
+  path: Assets/MiniGames/EndleesRunning
+  importAddress: Guid(d45f82081ecf0304e85667e702047ed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MiniGames/EndleesRunning using Guid(d45f82081ecf0304e85667e702047ed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '567c0b58b0b3e7fbf535b2581d862425') in 0.0007943 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=38d2eff348d9ce47b583eb26c04336b5 DependenciesID=ddaf2c854f9b8945745b399b96b14f6b StaticDependenciesID=d7f63cc4850ce8737d36f9cceeee08e2 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.945734 seconds.
+  path: Assets/MiniGames/EndleesRunning
+  importAddress: Guid(d45f82081ecf0304e85667e702047ed0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MiniGames/EndleesRunning using Guid(d45f82081ecf0304e85667e702047ed0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4fd9813b2db7127df5a12f5f88f4e576') in 0.0155235 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=53eead85dca8dc63e58ed972dca5b36d DependenciesID=09e265bf4bb14a5a5fa61207fb4cc8d5 StaticDependenciesID=37e29794fccbd021156c2c9c50748d42 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.734521 seconds.
+  path: Assets/MiniGames/EndleesRunner
+  importAddress: Guid(d45f82081ecf0304e85667e702047ed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MiniGames/EndleesRunner using Guid(d45f82081ecf0304e85667e702047ed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '4c4b897c2387c73637440fecbd157ed5') in 0.0004424 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=38d2eff348d9ce47b583eb26c04336b5 DependenciesID=28103a9f7f4b274ec9697e01b3e8e339 StaticDependenciesID=a6a8bf532f287215d4b8141a8f728ac1 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.950449 seconds.
+  path: Assets/MiniGames/EndleesRunner
+  importAddress: Guid(d45f82081ecf0304e85667e702047ed0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MiniGames/EndleesRunner using Guid(d45f82081ecf0304e85667e702047ed0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'fbc34557689a47867e3842ba47b1fea8') in 0.013432 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5ffb2c70601f05d8d71ae7c82197f05f DependenciesID=e1b1cd60aa1c8dc1578d664bf76f4e33 StaticDependenciesID=9d305eeedebf3f0eb133ec7e548f2971 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.932403 seconds.
+  path: Assets/MiniGames/EndlessRunner
+  importAddress: Guid(d45f82081ecf0304e85667e702047ed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MiniGames/EndlessRunner using Guid(d45f82081ecf0304e85667e702047ed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'ec597a781d5ea7c9f8eeec683591e5ba') in 0.0004293 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=38d2eff348d9ce47b583eb26c04336b5 DependenciesID=697a00d79957c7b3e0aea1140bed342d StaticDependenciesID=99357bd29e4f3cb36aed844dcc39cb11 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.020291 seconds.
+  path: Assets/MiniGames/EndlessRunner
+  importAddress: Guid(d45f82081ecf0304e85667e702047ed0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MiniGames/EndlessRunner using Guid(d45f82081ecf0304e85667e702047ed0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3fc06e6461cf143b3351ebd046cb10dd') in 0.0235956 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e29115cb07907b977c459909e5e4e728 DependenciesID=5fcea65a37f33bb4f13d5799cabb2ba7 StaticDependenciesID=72e059bce6c8a62a5b3127bed8873448 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.065907 seconds.
+  path: Assets/MiniGames/EndlessRunner/Prefabs
+  importAddress: Guid(0687bd6582c5c144892f73a72d1ded95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MiniGames/EndlessRunner/Prefabs using Guid(0687bd6582c5c144892f73a72d1ded95) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '182f424faf4ce820b681cbab49f9ca23') in 0.0004313 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8254ad54aa82d762ae50c4e97806cbc6 DependenciesID=84497aca329d149e73d8fcf3f18dc994 StaticDependenciesID=2eb7d4c38e3689cdb1d8608ed767d927 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.930628 seconds.
+  path: Assets/MiniGames/EndlessRunner/Prefabs
+  importAddress: Guid(0687bd6582c5c144892f73a72d1ded95) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MiniGames/EndlessRunner/Prefabs using Guid(0687bd6582c5c144892f73a72d1ded95) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4ca775ff24c2ebeb851930b76479cfe6') in 0.0184488 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c519276c96fcbcc522aa9dd759b6fba8 DependenciesID=c885774cf7fc136abb41cd7a705707fb StaticDependenciesID=1158ebdb028d4f5a55ae822c8c8497c9 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.864062 seconds.
+  path: Assets/MiniGames/EndlessRunner/Scenes
+  importAddress: Guid(91377ab789a17544e89d2dcdda55ebdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MiniGames/EndlessRunner/Scenes using Guid(91377ab789a17544e89d2dcdda55ebdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'b7705c0422eed0627f9df704ae9877f2') in 0.0004059 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=90e53c2383fd0098b73e8a8c3040c012 DependenciesID=669754e53a071a8c6568b2510e839b81 StaticDependenciesID=038c4e5e47b08dad3d9a3dd7636bb6bc 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.945013 seconds.
+  path: Assets/MiniGames/EndlessRunner/Scenes
+  importAddress: Guid(91377ab789a17544e89d2dcdda55ebdb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MiniGames/EndlessRunner/Scenes using Guid(91377ab789a17544e89d2dcdda55ebdb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '96b34547cbc1ad733be5fad4e0f6b3d7') in 0.0096804 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5e805072d15d511e7eecfc9680843f80 DependenciesID=59d62d709a96aca554336aa40b37e656 StaticDependenciesID=f878ff952e48f40d024cfdd4e359bcf9 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.633584 seconds.
+  path: Assets/MiniGames/EndlessRunner/New Folder
+  importAddress: Guid(4508ca5d56fe07847a84f492270ca2b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MiniGames/EndlessRunner/New Folder using Guid(4508ca5d56fe07847a84f492270ca2b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '77725dc4b4e6e9a1646d7506aa2497aa') in 0.0004525 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a9a0d6157d907f74565fa2863ca48f2e DependenciesID=7944f67ebe5f7b5efaaf0dc8b540aca1 StaticDependenciesID=e855defb07f05daf19f12614259ddbd8 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.936342 seconds.
+  path: Assets/MiniGames/EndlessRunner/New Folder
+  importAddress: Guid(4508ca5d56fe07847a84f492270ca2b1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MiniGames/EndlessRunner/New Folder using Guid(4508ca5d56fe07847a84f492270ca2b1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '8ca811e46b850350faca99217956c565') in 0.017866 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=11c65c0d91e6cdacffe97b5455976432 DependenciesID=f57efdb271b95bf1162c4303251d5dc6 StaticDependenciesID=29df1dfb5efe2592ea3ab071acdc6f91 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.263501 seconds.
+  path: Assets/MiniGames/EndlessRunner/Scripts
+  importAddress: Guid(4508ca5d56fe07847a84f492270ca2b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MiniGames/EndlessRunner/Scripts using Guid(4508ca5d56fe07847a84f492270ca2b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '5da560337bf12481d8330d3e1c4b9d4b') in 0.0004301 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a9a0d6157d907f74565fa2863ca48f2e DependenciesID=c33e154dad3ea0bd184cfa42c7fe035b StaticDependenciesID=7d55a369aaed233b7228fa61d007de58 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.941326 seconds.
+  path: Assets/MiniGames/EndlessRunner/Scripts
+  importAddress: Guid(4508ca5d56fe07847a84f492270ca2b1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MiniGames/EndlessRunner/Scripts using Guid(4508ca5d56fe07847a84f492270ca2b1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd3b3c58e8ab65fcf9abf6387e7e8b57a') in 0.0260111 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ca3944db1db039b04e8a881714f7ec7e DependenciesID=90c2f3245d3811d2e9a253bdd348b6fd StaticDependenciesID=511f5e16ed8b47297f9c59ddb0f7ee32 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6566 unused Assets / (5.4 MB). Loaded Objects now: 7405.
+Memory consumption went from 159.5 MB to 154.1 MB.
+Total: 7.794100 ms (FindLiveObjects: 0.522600 ms CreateObjectMapping: 0.428800 ms MarkObjects: 5.098300 ms  DeleteObjects: 1.742900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 9.741659 seconds.
+  path: Assets/MiniGames/EndlessRunner/Scripts/NewMonoBehaviourScript.cs
+  importAddress: Guid(53222fc510ea2e04c9e0e03b3dbedb46) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MiniGames/EndlessRunner/Scripts/NewMonoBehaviourScript.cs using Guid(53222fc510ea2e04c9e0e03b3dbedb46) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '76541be3ef21d6a71412ef9fa8c1e565') in 0.0242033 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b7c590314014e4b92fbed21a517be5b1 DependenciesID=82a9a16bdbdd4a9597420edb060c0da3 StaticDependenciesID=de05b0cf72b437d543fff567a05b61b1 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6566 unused Assets / (5.5 MB). Loaded Objects now: 7405.
+Memory consumption went from 159.5 MB to 154.0 MB.
+Total: 8.532700 ms (FindLiveObjects: 1.134400 ms CreateObjectMapping: 0.766000 ms MarkObjects: 4.712500 ms  DeleteObjects: 1.918900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 9.861562 seconds.
+  path: Assets/MiniGames/EndlessRunner/Scripts/PlayerControler.cs
+  importAddress: Guid(53222fc510ea2e04c9e0e03b3dbedb46) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MiniGames/EndlessRunner/Scripts/PlayerControler.cs using Guid(53222fc510ea2e04c9e0e03b3dbedb46) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f3c9be63328edae24119bfca4990f979') in 0.0198107 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=41cae9102f7f07acf2e70080c62cb39d DependenciesID=a0354b19fbfde992f20d3171a505320e StaticDependenciesID=f613436d1963b83970e0eb6682ab75d5 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.544 seconds
+Domain Reload Profiling: 1198ms
+	BeginReloadAssembly (182ms)
+		DisableScriptedObjects (7ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (378ms)
+		LoadAssemblies (292ms)
+		AnalyzeDomain (161ms)
+			TypeCache.Refresh (10ms)
+			BuildScriptInfoCaches (135ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (544ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (113ms)
+			ProcessInitializeOnLoadAttributes (220ms)
+			ProcessInitializeOnLoadMethodAttributes (54ms)
+			AfterProcessingInitializeOnLoad (5ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6577 unused Assets / (6.1 MB). Loaded Objects now: 7421.
+Memory consumption went from 168.5 MB to 162.4 MB.
+Total: 6.600400 ms (FindLiveObjects: 0.535500 ms CreateObjectMapping: 0.443900 ms MarkObjects: 3.565100 ms  DeleteObjects: 2.053700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6565 unused Assets / (5.3 MB). Loaded Objects now: 7420.
+Memory consumption went from 171.6 MB to 166.3 MB.
+Total: 7.861900 ms (FindLiveObjects: 0.523300 ms CreateObjectMapping: 0.378600 ms MarkObjects: 5.307900 ms  DeleteObjects: 1.650800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.524 seconds
+Domain Reload Profiling: 1148ms
+	BeginReloadAssembly (169ms)
+		DisableScriptedObjects (5ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (370ms)
+		LoadAssemblies (280ms)
+		AnalyzeDomain (163ms)
+			TypeCache.Refresh (9ms)
+			BuildScriptInfoCaches (135ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (524ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (111ms)
+			ProcessInitializeOnLoadAttributes (215ms)
+			ProcessInitializeOnLoadMethodAttributes (52ms)
+			AfterProcessingInitializeOnLoad (4ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6576 unused Assets / (5.2 MB). Loaded Objects now: 7423.
+Memory consumption went from 181.8 MB to 176.6 MB.
+Total: 6.060600 ms (FindLiveObjects: 0.398700 ms CreateObjectMapping: 0.269800 ms MarkObjects: 3.952600 ms  DeleteObjects: 1.438700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.97 ms, found 4 plugins.
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6566 unused Assets / (5.2 MB). Loaded Objects now: 7424.
+Memory consumption went from 184.9 MB to 179.7 MB.
+Total: 14.332200 ms (FindLiveObjects: 0.904400 ms CreateObjectMapping: 0.430300 ms MarkObjects: 9.451900 ms  DeleteObjects: 3.543300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 482.780451 seconds.
+  path: Assets/MiniGames/EndlessRunner/Scripts/PlayerController.cs
+  importAddress: Guid(cbf9e181352fc3346a477a094a627809) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MiniGames/EndlessRunner/Scripts/PlayerController.cs using Guid(cbf9e181352fc3346a477a094a627809) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '957da2d196ac44e7b0d13ca0d30965ff') in 0.1033383 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f8a92b508a1ca525020531049b578c24 DependenciesID=c25a04039668ef5103bcf74c3d73a4ed StaticDependenciesID=3a2615a05514509c33045128d6b9dc49 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.95 ms, found 4 plugins.
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6570 unused Assets / (3.0 MB). Loaded Objects now: 7428.
+Memory consumption went from 176.2 MB to 173.2 MB.
+Total: 10.702300 ms (FindLiveObjects: 1.039600 ms CreateObjectMapping: 0.383100 ms MarkObjects: 6.428800 ms  DeleteObjects: 2.849000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 27.082431 seconds.
+  path: Assets/MiniGames/EndlessRunner/Scripts/CameraFollow.cs
+  importAddress: Guid(d0e8d7d3adbbdba4a863c632970518ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MiniGames/EndlessRunner/Scripts/CameraFollow.cs using Guid(d0e8d7d3adbbdba4a863c632970518ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a5ed340fce7de97fe925d6db50420436') in 0.0231458 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a12333ade854bb3ae47cd4403cef2bf4 DependenciesID=7dd1252cacea8a78efc417f881d45874 StaticDependenciesID=1d397045ea69776f460a7d668e505953 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/MiniGames/EndlessRunner/Scripts/TrackManager.cs
+  importAddress: Guid(91cb279a99055a64a8cba28e432bd0f2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MiniGames/EndlessRunner/Scripts/TrackManager.cs using Guid(91cb279a99055a64a8cba28e432bd0f2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '79738db9f27134be610d716e2fe1ba1f') in 0.0166365 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=93664cf3ccbc304c04cb6bc7b5764585 DependenciesID=b4f873711828723e122a102e68733ae9 StaticDependenciesID=2475317ce58852f0da93547486f7b606 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/MiniGames/EndlessRunner/Scripts/GameManager.cs
+  importAddress: Guid(24418d34967e7284ba91542eabb93cab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MiniGames/EndlessRunner/Scripts/GameManager.cs using Guid(24418d34967e7284ba91542eabb93cab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '1e65de07cbe74af7eb034be8e64e1487') in 0.0223371 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=381c4e5d594d7540177e6ae49ffa6fbe DependenciesID=e21c5618793bc4b3f62d29686c7c73a3 StaticDependenciesID=25971e0db546bd21fb945b5e80f3ef12 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.986467 seconds.
+  path: Assets/MiniGames/New Folder
+  importAddress: Guid(dce571638aef45249ba1de6bbe55e054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MiniGames/New Folder using Guid(dce571638aef45249ba1de6bbe55e054) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd03162c051d6b20e899842d4aa576f17') in 0.0005376 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=868e6b1053f5e60892a20f9a4e8f1c06 DependenciesID=47c51487e3191a4cdbdb8f36f4c23ce3 StaticDependenciesID=edc4f3d289d5734f77192d7d8ad3ad4e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.937016 seconds.
+  path: Assets/MiniGames/New Folder
+  importAddress: Guid(dce571638aef45249ba1de6bbe55e054) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MiniGames/New Folder using Guid(dce571638aef45249ba1de6bbe55e054) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9c2c97080cd1ea5e7c36d97388eccbd8') in 0.0192194 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f111088f55b270ed90339dfe9a10d8c9 DependenciesID=3245d6f1f9bb42fe7e14ab1ce1ace148 StaticDependenciesID=64919de81a08234b95e879df3624674e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.166036 seconds.
+  path: Assets/MiniGames/SpaceShooter
+  importAddress: Guid(dce571638aef45249ba1de6bbe55e054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MiniGames/SpaceShooter using Guid(dce571638aef45249ba1de6bbe55e054) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '975a9e1b20b81be55b5b11aaaf76f584') in 0.0005196 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=868e6b1053f5e60892a20f9a4e8f1c06 DependenciesID=57c498c3bb7f30c8ee0297f27290ce5a StaticDependenciesID=76cbee07dffcaff2076119f3b908fd17 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.002873 seconds.
+  path: Assets/MiniGames/SpaceShooter
+  importAddress: Guid(dce571638aef45249ba1de6bbe55e054) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MiniGames/SpaceShooter using Guid(dce571638aef45249ba1de6bbe55e054) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5c14484d382fb821edbfe5245ce51934') in 0.0115285 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=54de5bbaa0230f442b2b6ce9de91bc10 DependenciesID=46bcc44acd9e653407eef8504a0f97eb StaticDependenciesID=3f318bd82ea9a6fedd81b98f4545763b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6578 unused Assets / (4.8 MB). Loaded Objects now: 7436.
+Memory consumption went from 176.3 MB to 171.5 MB.
+Total: 5.702800 ms (FindLiveObjects: 0.414200 ms CreateObjectMapping: 0.268800 ms MarkObjects: 3.596800 ms  DeleteObjects: 1.422200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 59.001939 seconds.
+  path: Assets/MiniGames/SpaceShooter/EnemyBullet.cs
+  importAddress: Guid(2f9ceb0cc90a9b94ebeeb53e343513fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MiniGames/SpaceShooter/EnemyBullet.cs using Guid(2f9ceb0cc90a9b94ebeeb53e343513fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '47b54c1b9b66d172ea8c5b758711228c') in 0.010555 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=26147c9872902437c5a614f36c7cfacc DependenciesID=7aee92dd71b630fddddeb42ac74618cd StaticDependenciesID=031dfb49d7e31cdf20e1ec159cd93813 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/MiniGames/SpaceShooter/BackgroundScroller.cs
+  importAddress: Guid(402d5f76ff314144a939bbbf37946b22) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MiniGames/SpaceShooter/BackgroundScroller.cs using Guid(402d5f76ff314144a939bbbf37946b22) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '374dd1553aca72e74159938e6c09dcfe') in 0.0197188 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2d762d4ab0b0c0432bd101eb640ad931 DependenciesID=4b4fda14adbe60bde4c411641796124e StaticDependenciesID=db5546573125413819d15986100443b5 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/MiniGames/SpaceShooter/SpaceGameManager.cs
+  importAddress: Guid(eea4549c9e7d22344b9d23d4922737e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MiniGames/SpaceShooter/SpaceGameManager.cs using Guid(eea4549c9e7d22344b9d23d4922737e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '7a95256c6c89230e4e47a7feb0b328f0') in 0.0200565 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f03b45aa851a918a8726cb57187fb8ef DependenciesID=6c70ba0baddaf9dadc06c8d8059d5d00 StaticDependenciesID=7a758f7ee2e7cf1e2d494d601dd53a99 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/MiniGames/SpaceShooter/EnemySpawner.cs
+  importAddress: Guid(1b8f0408bf671d14e88a6cef16baadae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MiniGames/SpaceShooter/EnemySpawner.cs using Guid(1b8f0408bf671d14e88a6cef16baadae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'cca053d0ef5ddcf7b037904dc991c1cd') in 0.0143099 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b1506124dcac82820889cbf1d63bf2ca DependenciesID=5ef336280e26f268d7f9cce32aca9640 StaticDependenciesID=d72e141d3d18d6a1042392d9a71a111e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6578 unused Assets / (5.4 MB). Loaded Objects now: 7436.
+Memory consumption went from 176.3 MB to 170.9 MB.
+Total: 6.157700 ms (FindLiveObjects: 0.446200 ms CreateObjectMapping: 0.260800 ms MarkObjects: 3.556300 ms  DeleteObjects: 1.893500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6578 unused Assets / (5.1 MB). Loaded Objects now: 7436.
+Memory consumption went from 179.2 MB to 174.1 MB.
+Total: 5.968900 ms (FindLiveObjects: 0.452500 ms CreateObjectMapping: 0.301800 ms MarkObjects: 3.668800 ms  DeleteObjects: 1.544900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6578 unused Assets / (4.8 MB). Loaded Objects now: 7436.
+Memory consumption went from 182.1 MB to 177.3 MB.
+Total: 5.847700 ms (FindLiveObjects: 0.409600 ms CreateObjectMapping: 0.275200 ms MarkObjects: 3.683900 ms  DeleteObjects: 1.478100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6578 unused Assets / (4.0 MB). Loaded Objects now: 7436.
+Memory consumption went from 185.0 MB to 181.0 MB.
+Total: 6.095100 ms (FindLiveObjects: 0.595600 ms CreateObjectMapping: 0.259100 ms MarkObjects: 3.821500 ms  DeleteObjects: 1.417300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6578 unused Assets / (4.4 MB). Loaded Objects now: 7436.
+Memory consumption went from 188.0 MB to 183.6 MB.
+Total: 6.205500 ms (FindLiveObjects: 0.940700 ms CreateObjectMapping: 0.380500 ms MarkObjects: 3.535600 ms  DeleteObjects: 1.347600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6578 unused Assets / (4.7 MB). Loaded Objects now: 7436.
+Memory consumption went from 190.9 MB to 186.2 MB.
+Total: 5.746700 ms (FindLiveObjects: 0.418000 ms CreateObjectMapping: 0.255200 ms MarkObjects: 3.578100 ms  DeleteObjects: 1.494600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6578 unused Assets / (4.5 MB). Loaded Objects now: 7436.
+Memory consumption went from 193.9 MB to 189.3 MB.
+Total: 5.935000 ms (FindLiveObjects: 0.453100 ms CreateObjectMapping: 0.272500 ms MarkObjects: 3.520800 ms  DeleteObjects: 1.687700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6578 unused Assets / (6.8 MB). Loaded Objects now: 7436.
+Memory consumption went from 196.8 MB to 190.0 MB.
+Total: 8.644500 ms (FindLiveObjects: 0.931700 ms CreateObjectMapping: 0.356100 ms MarkObjects: 3.898700 ms  DeleteObjects: 3.456100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
